@@ -1,0 +1,16 @@
+<div id="header-wrapper">
+  <div id="header" class="container">
+    <div id="logo">
+      <h1><a href="#">Lado</a></h1>
+    </div>
+    <div id="menu">
+      <ul>
+        <li class="{{active.home}}" (click)="setActiveItem('home')" ><a [routerLink]="['/']" class="btn">Domov</a></li>
+        <li class="{{active.our_work}}" (click)="setActiveItem('our_work')"><a [routerLink]="['/our_work']" class="btn">Nasa praca</a></li>
+        <li class="{{active.about}}" (click)="setActiveItem('about')"><a [routerLink]="['/about']" class="btn">O nas</a></li>
+        <li class="{{active.contact}}" (click)="setActiveItem('contact')"><a [routerLink]="['/contact']" class="btn">Kontakt</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
